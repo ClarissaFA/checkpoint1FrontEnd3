@@ -1,0 +1,42 @@
+#banner {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 1rem;
+  background: center / cover no-repeat
+    url(https://images.unsplash.com/photo-1496171367470-9ed9a91ea931?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1170&q=80);
+
+  #descricao {
+    height: 35%;
+    width: 50%;
+    background-color: rgba(222, 218, 228, 0.548);
+    padding: 4rem;
+    font-size: 1.2rem;
+  }
+
+  h2,
+  p {
+    margin: 0, 0, 0, 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #banner {
+    #descricao {
+      padding: 1rem;
+    }
+  }
+}
+
+@media only screen and (max-width: 500px) {
+    #banner {
+      #descricao {
+        height: 42%;
+        width:100%;
+        padding: 1rem;
+      }
+    }
+  }
